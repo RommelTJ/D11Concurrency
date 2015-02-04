@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "D11Concurrency-Swift.h" //This is the bridge for ObjC code to access Swift files.
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //NSLog(@"sizeof(int): %lu", sizeof(int)); //32-bits (returns 4 bytes)
+    //NSLog(@"sizeof(long): %u", sizeof(long)); //64-bits (returns 4 bytes in 32-bit platforms, 8 bytes in 64-byte platforms)
+    
+    [DataStore restoreData];
+    
     return YES;
 }
 
@@ -26,8 +33,11 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
+    [DataStore saveData];
+    
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {

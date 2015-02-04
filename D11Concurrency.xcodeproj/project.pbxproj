@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		772CA1971A81CADE00C61EE4 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CA1961A81CADE00C61EE4 /* DataStore.swift */; };
 		778003B91A81B2CE0016E434 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 778003B81A81B2CE0016E434 /* main.m */; };
 		778003BC1A81B2CE0016E434 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 778003BB1A81B2CE0016E434 /* AppDelegate.m */; };
 		778003BF1A81B2CE0016E434 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778003BE1A81B2CE0016E434 /* ViewController.m */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		772CA1961A81CADE00C61EE4 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		778003B31A81B2CE0016E434 /* D11Concurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = D11Concurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		778003B71A81B2CE0016E434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		778003B81A81B2CE0016E434 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				778003BA1A81B2CE0016E434 /* AppDelegate.h */,
 				778003BB1A81B2CE0016E434 /* AppDelegate.m */,
+				772CA1961A81CADE00C61EE4 /* DataStore.swift */,
 				778003BD1A81B2CE0016E434 /* ViewController.h */,
 				778003BE1A81B2CE0016E434 /* ViewController.m */,
 				778003C01A81B2CE0016E434 /* Main.storyboard */,
@@ -227,6 +230,7 @@
 				778003DE1A81BD2A0016E434 /* SwiftViewController.swift in Sources */,
 				778003BF1A81B2CE0016E434 /* ViewController.m in Sources */,
 				778003BC1A81B2CE0016E434 /* AppDelegate.m in Sources */,
+				772CA1971A81CADE00C61EE4 /* DataStore.swift in Sources */,
 				778003B91A81B2CE0016E434 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +429,7 @@
 				778003D81A81B2CE0016E434 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		778003D91A81B2CE0016E434 /* Build configuration list for PBXNativeTarget "D11ConcurrencyTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +438,7 @@
 				778003DB1A81B2CE0016E434 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
